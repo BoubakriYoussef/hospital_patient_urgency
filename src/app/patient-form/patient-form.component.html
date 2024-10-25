@@ -1,0 +1,46 @@
+<!-- add-patient.component.html -->
+<form (submit)="onSubmit()" #patientForm="ngForm">
+  <label for="firstName">First Name</label>
+  <input type="text" id="firstName" [(ngModel)]="patient.firstName" name="firstName" required>
+
+  <label for="lastName">Last Name</label>
+  <input type="text" id="lastName" [(ngModel)]="patient.lastName" name="lastName" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" [(ngModel)]="patient.email" name="email" required>
+
+  <label for="phone">Phone</label>
+  <input type="tel" id="phone" [(ngModel)]="patient.phone" name="phone" required>
+
+  <label for="gender">Gender</label>
+  <input type="text" id="gender" [(ngModel)]="patient.gender" name="gender" required>
+
+  <label for="birthDate">Birth Date</label>
+  <input type="date" id="birthDate" [(ngModel)]="patient.birthDate" name="birthDate" required>
+
+  <label for="birthPlace">Birth Place</label>
+  <input type="text" id="birthPlace" [(ngModel)]="patient.birthPlace" name="birthPlace" required>
+
+  <label for="birthCountry">Birth Country</label>
+  <input type="text" id="birthCountry" [(ngModel)]="patient.birthCountry" name="birthCountry" required>
+
+  <label for="city">City</label>
+  <input type="text" id="city" [(ngModel)]="patient.city" name="city" required>
+
+  <label for="state">State</label>
+  <input type="text" id="state" [(ngModel)]="patient.state" name="state" required>
+
+  <label for="zip">ZIP Code</label>
+  <input type="text" id="zip" [(ngModel)]="patient.zip" name="zip" required>
+
+  <label for="country">Country</label>
+  <input type="text" id="country" [(ngModel)]="patient.country" name="country" required>
+
+  <label for="address">Address</label>
+  <input type="text" id="address" [(ngModel)]="patient.address" name="address" required>
+
+  <label for="urgencyLevel">Urgency Level</label>
+  <input type="number" id="urgencyLevel" [(ngModel)]="patient.urgencyLevel" name="urgencyLevel" required>
+
+  <button type="submit">Add Patient</button>
+</form>
